@@ -1,0 +1,62 @@
+<mvc:View controllerName="ui5training.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+      				<List headerText="Product Information" id="l1">
+
+                    <!-- Product 1 -->
+		<ObjectListItem
+			title="{i18n>Product1}" id="list1" type="Active" press="onListItemPress1"
+            number="{i18n>Price1}">
+			<firstStatus>
+				<ObjectStatus
+					text="Available" id="p1"/>
+			</firstStatus>
+            <ObjectAttribute text="{i18n>description1}" id="desc1"/>
+		</ObjectListItem>
+
+        <!-- product 2 -->
+        <ObjectListItem
+			title="{i18n>Product2}" id="list2" type="Active" press="onListItemPress2"
+            number="{i18n>Price2}">
+			<firstStatus>
+				<ObjectStatus
+					text="Available" id="p2"/>
+			</firstStatus>
+            	<ObjectAttribute text="{i18n>description2}" id="desc2"/>
+		</ObjectListItem>
+
+        <!-- Product 3 -->
+        <ObjectListItem
+			title="{i18n>Product3}" id="list3" type="Active" press="onListItemPress3"
+            number="{i18n>Price3}">
+			<firstStatus>
+				<ObjectStatus
+					text="Not available" id="p3"/>
+			</firstStatus>
+            <ObjectAttribute text="{i18n>description3}" id="desc3"/>
+		</ObjectListItem>
+
+        <!-- Product 4 -->
+         <ObjectListItem
+			title="{i18n>Product4}" id="list4" type="Active" press="onListItemPress4"
+            number="{i18n>Price4}">
+			<firstStatus>
+				<ObjectStatus
+					text="Available" id="p4"/>
+			</firstStatus>
+            <ObjectAttribute text="{i18n>description4}" id="desc4"/>
+		</ObjectListItem>
+
+        <!-- Product 5 -->
+         <ObjectListItem
+			title="{i18n>Product5}" id="list5" type="Active" press="onListItemPress5"
+            number="{i18n>Price5}">
+			<firstStatus>
+				<ObjectStatus
+					text="Available" id="p5"/>
+			</firstStatus>
+            <ObjectAttribute text="{i18n>description5}" id="desc5"/>
+		</ObjectListItem>
+	</List>
+    </Page>
+</mvc:View>
